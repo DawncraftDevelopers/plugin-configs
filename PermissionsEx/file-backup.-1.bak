@@ -1,0 +1,157 @@
+groups:
+  Member:
+    default: true
+    prefix: '&7&l[Player]&7 '
+    build: true
+    permissions:
+    - essentials.help
+    - essentials.afk.auto
+    - essentials.getpos
+    - worldedit.biome.info
+    - essentials.rules
+    - essentials.motd
+    - essentials.afk
+    - deluxetags.gui
+    - deluxetags.list
+    - deluxetags.select
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.depth
+    - essentials.delhome
+    - essentials.help
+    - essentials.home
+    - essentials.kit
+    - essentials.pay
+    - essentials.kits.*
+    - essentials.kit.tools
+    - essentials.list
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.me
+    - essentials.motd
+    - essentials.msg
+    - essentials.ping
+    - essentials.r
+    - worldedit.biome.list
+    - essentials.rules
+    - essentials.seen
+    - essentials.sethome
+    - essentials.signs.use.disposal
+    - essentials.spawn
+    - essentials.suicide
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.tpdeny
+    - essentials.helpop
+    - essentials.warp
+    - essentials.me
+    - essentials.realbam
+  Builder:
+    default: false
+    prefix: '&c&l[&4&lBuilder&c&l]&f '
+    inheritance:
+    - Guest
+    - Member
+    build: true
+    permissions:
+    - essentials.help
+    - essentials.rules
+    - essentials.motd
+    - worldedit.*
+    - worldguard.*
+    - holograms.*
+  Mod:
+    default: false
+    prefix: '&e&l[&6&lModerator&e&l]&f '
+    inheritance:
+    - VIP
+    - Member
+    - Guest
+    build: true
+    permissions:
+    - essentials.sethome.multiple.staff
+    - essentials.helpop
+    - essentials.home.others
+    - essentials.nick
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.chat.ignoreexempt
+    - essentials.helpop.recieve
+    - essentials.seen.ipsearch
+    - essentials.seen
+    - essentials.seen.banreason
+  Developer:
+    default: false
+    prefix: '&d&l[&5&lDeveloper&d&l]&7 '
+    inheritance:
+    - Guest
+    - Member
+    - Admin
+    - Builder
+    build: true
+    permissions:
+    - '*'
+  Admin:
+    default: false
+    prefix: '&4&l[&c&lAdministrator&4&l]&7 '
+    inheritance:
+    - Mod
+    - VIP
+    - Member
+    - Guest
+    - Developer
+    - Builder
+    build: true
+    permissions:
+    - essentials.gamemode
+    - essentials.give
+    - essentials.god
+    - essentials.helpop.recieve
+    - essentials.time
+    - essentials.unlimited
+    - holograms.*
+  Manager:
+    default: false
+    prefix: '&a&l[&2Manager&a]&7 '
+    inheritance:
+    - Admin
+    - Mod
+    build: true
+    permissions:
+    - '*'
+  DeveloperManager:
+    default: false
+    prefix: '&d&l[&5&lDeveloper&d&l]&7 '
+    suffix: ' &a&l[&2&lManager&a&l]&7 '
+    inheritance:
+    - Admin
+    - Mod
+    build: true
+    permissions:
+    - '*'
+  Owner:
+    default: false
+    prefix: '&1&l[&9&lOwner&1&l]&f '
+    build: true
+    permissions:
+    - '*'
+users:
+  derpyfanta:
+    group:
+    - DeveloperManager
+  hoot_loop:
+    group:
+    - Owner
+  dark_ranger002:
+    group:
+    - Manager
+  jerseypan:
+    group:
+    - Manager
+  chris_jersey:
+    group:
+    - Developer
+  speakingeel84:
+    group:
+    - Builder

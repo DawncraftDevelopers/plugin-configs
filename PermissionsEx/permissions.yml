@@ -1,0 +1,193 @@
+groups:
+  Member:
+    build: true
+    permissions:
+    - essentials.help
+    - essentials.afk.auto
+    - essentials.getpos
+    - worldedit.biome.info
+    - essentials.rules
+    - essentials.motd
+    - essentials.afk
+    - deluxetags.gui
+    - deluxetags.list
+    - deluxetags.select
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.depth
+    - essentials.delhome
+    - essentials.help
+    - essentials.home
+    - essentials.kit
+    - essentials.pay
+    - essentials.kits.*
+    - essentials.kit.tools
+    - essentials.list
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.me
+    - essentials.motd
+    - essentials.msg
+    - essentials.ping
+    - essentials.r
+    - worldedit.biome.list
+    - essentials.rules
+    - essentials.seen
+    - essentials.sethome
+    - essentials.signs.use.disposal
+    - essentials.spawn
+    - essentials.suicide
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.tpdeny
+    - essentials.helpop
+    - essentials.warp
+    - essentials.me
+    - essentials.realbam
+    options:
+      prefix: '&7&l[Player]&7 '
+      default: true
+  Builder:
+    inheritance:
+    - Guest
+    - Member
+    build: true
+    permissions:
+    - essentials.gamemode.survival
+    - essentials.gamemode.creative
+    - essentials.gamemode
+    - essentials.help
+    - essentials.rules
+    - essentials.motd
+    - worldedit.*
+    - worldguard.*
+    - holograms.*
+    options:
+      prefix: '&c&l[&4&lBuilder&c&l]&f '
+      default: false
+  Mod:
+    inheritance:
+    - VIP
+    - Member
+    - Guest
+    build: true
+    permissions:
+    - essentials.sethome.multiple.staff
+    - essentials.helpop
+    - essentials.home.others
+    - essentials.nick
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.chat.ignoreexempt
+    - essentials.helpop.recieve
+    - essentials.seen.ipsearch
+    - essentials.seen
+    - essentials.seen.banreason
+    options:
+      prefix: '&e&l[&6&lModerator&e&l]&f '
+      default: false
+  Developer:
+    inheritance:
+    - Guest
+    - Member
+    - Admin
+    - Builder
+    build: true
+    permissions:
+    - '*'
+    options:
+      prefix: '&d&l[&5&lDeveloper&d&l]&7 '
+      default: false
+  Admin:
+    inheritance:
+    - Mod
+    - VIP
+    - Member
+    - Guest
+    - Developer
+    - Builder
+    build: true
+    permissions:
+    - essentials.gamemode
+    - essentials.give
+    - essentials.god
+    - essentials.helpop.recieve
+    - essentials.time
+    - essentials.unlimited
+    - holograms.*
+    options:
+      prefix: '&4&l[&c&lAdministrator&4&l]&7 '
+      default: false
+  Manager:
+    inheritance:
+    - Admin
+    - Mod
+    build: true
+    permissions:
+    - '*'
+    options:
+      prefix: '&a&l[&2Manager&a]&7 '
+      default: false
+  DeveloperManager:
+    inheritance:
+    - Admin
+    - Mod
+    build: true
+    permissions:
+    - '*'
+    options:
+      prefix: '&d&l[&5&lDeveloper&d&l]&7 '
+      suffix: ' &a&l[&2&lManager&a&l]&7 '
+      default: false
+  Owner:
+    build: true
+    permissions:
+    - '*'
+    options:
+      prefix: '&1&l[&9&lOwner&1&l]&f '
+      default: false
+users:
+  jerseypan:
+    group:
+    - Manager
+  chris_jersey:
+    group:
+    - Developer
+  speakingeel84:
+    group:
+    - Builder
+  ce44e380-51ad-44d1-9cb6-ab83a8f65f62:
+    group:
+    - DeveloperManager
+    options:
+      name: DerpyFanta
+  8e31d0d8-c7f6-4b33-bfcd-f56737ae0f3f:
+    group:
+    - Owner
+    options:
+      name: Hoot_Loop
+  3fac9826-09c3-4f16-abb9-e301fe1093ad:
+    group:
+    - Member
+    options:
+      name: SpookyFanta
+  a1094058-89ab-496e-928c-cb660577e1bd:
+    options:
+      name: moersleutel
+  8051de6c-ff56-4afd-9666-3abcb4d25bf2:
+    group:
+    - Builder
+    options:
+      name: ItsIceewolf
+  77e52deb-65dc-4a71-8ba2-d65c037b7cec:
+    group:
+    - Manager
+    options:
+      name: Dark_Ranger002
+  81c1e4fc-c576-4377-b70e-d84b641fc5af:
+    group:
+    - Mod
+    options:
+      name: SimplyBonnie
+schema-version: 1
