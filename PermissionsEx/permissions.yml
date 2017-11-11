@@ -9,6 +9,7 @@ groups:
     - essentials.rules
     - essentials.motd
     - essentials.afk
+    - plots.permpack.basic
     - deluxetags.gui
     - deluxetags.list
     - deluxetags.select
@@ -32,6 +33,7 @@ groups:
     - essentials.r
     - worldedit.biome.list
     - essentials.rules
+    - plots.plot.2
     - essentials.seen
     - essentials.sethome
     - essentials.signs.use.disposal
@@ -82,6 +84,8 @@ groups:
     - essentials.chat.ignoreexempt
     - essentials.helpop.recieve
     - essentials.seen.ipsearch
+    - plots.permpack.basicinbox
+    - plots.permpack.basicflags
     - essentials.seen
     - essentials.seen.banreason
     options:
@@ -116,6 +120,9 @@ groups:
     - essentials.time
     - essentials.unlimited
     - holograms.*
+    - plots.use
+    - plots.worldedit.bypass
+    - plots.admin.*
     options:
       prefix: '&4&l[&c&lAdministrator&4&l]&7 '
       default: false
