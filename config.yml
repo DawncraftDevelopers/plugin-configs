@@ -471,7 +471,7 @@ command-costs:
 # Set this to a currency symbol you want to use.
 # Remember, if you want to use special characters in this document, 
 # such as accented letters, you MUST save the file as UTF-8, not ANSI.
-currency-symbol: '£'
+currency-symbol: 'Â£'
 
 # Set the maximum amount of money a player can have.
 # The amount is always limited to 10 trillion because of the limitations of a java double.
@@ -521,7 +521,7 @@ chat:
   # For more information of chat formatting, check out the wiki: http://wiki.ess3.net/wiki/Chat_Formatting
 
   #format: '<{DISPLAYNAME}> {MESSAGE}'
-  format: '&r{DISPLAYNAME}&7»&r {MESSAGE}'
+  format: '&r{DISPLAYNAME}&7Â»&r {MESSAGE}'
 
   group-formats:
   #  Default: '{WORLDNAME} {DISPLAYNAME}&7:&r {MESSAGE}'
@@ -663,7 +663,7 @@ protect:
     # Should people with build: false in permissions be allowed to use items?
     # Set true to disable using for those people.
     # Setting to false means EssentialsAntiBuild will never prevent you from using items.
-    use: true
+    use: false
 
     # Should we tell people they are not allowed to build?
     warn-on-build-disallow: true
