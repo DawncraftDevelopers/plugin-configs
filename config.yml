@@ -521,7 +521,7 @@ chat:
   # For more information of chat formatting, check out the wiki: http://wiki.ess3.net/wiki/Chat_Formatting
 
   #format: '<{DISPLAYNAME}> {MESSAGE}'
-  format: '&r{DISPLAYNAME}&7»&r {MESSAGE}'
+  format: '&r{GROUP} {DISPLAYNAME}&7»&r {MESSAGE}'
 
   group-formats:
   #  Default: '{WORLDNAME} {DISPLAYNAME}&7:&r {MESSAGE}'
